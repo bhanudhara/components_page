@@ -2,28 +2,63 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="./index.css">
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.7.1.min.js"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="chosen.jquery.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <link rel="stylesheet" href="./index.css" />
+
+   
+  </head>
 
 <body>
     <div class="Whole_container">
-        <div class="header">
-            head
+        <div class="header bg-primary">
+         <div>
+            <img src="assets/Group.svg">
+         </div>
+          <div>
+              <!-- Button trigger modal -->
+                <button type="button" class="btn btn-success" id="buttontoggle">
+                    Apply New styles
+                </button>
+          </div>
         </div>
+        
         <div class="d-flex body_container">
             <nav id="navbar-example3"
                 class="navbar justify-content-start  navbar-light bg-light flex-column align-items-stretch p-3">
-                <a class="navbar-brand" href="#">Innova solutions</a>
+                <!-- <a class="navbar-brand custom_h1" href="#" >Innova solutions</a> -->
                 <nav class="nav nav-pills flex-column">
                     <a class="nav-link" href="#item-1">Tables</a>
 
@@ -31,18 +66,18 @@
 
                     <a class="nav-link" href="#item-3">forms</a>
 
-                    <a class="nav-link" href="#item-3">Dropdown&Buttons</a>
+                    <a class="nav-link" href="#item-4">Dropdown&Buttons</a>
 
                 </nav>
             </nav>
 
-            <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" tabindex="0">
+            <div class="data_content" data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" tabindex="0">
                 <div>
-                    <h4 id="item-1">Table Details</h4>
-                    <div>
+                    <div class="custom_h2 py-2" id="item-1">Table Details</div>
+                    <!-- <div class="card"> -->
                         <table class="table">
                             <thead>
-                                <tr>
+                                <tr class="custom_h4 blue_clr">
                                     <th scope="col">Name</th>
                                     <th scope="col">Client ID</th>
                                     <th scope="col">Created on</th>
@@ -50,7 +85,7 @@
                                     <th scope="col">Status</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody class="custom_h5">
                                 <tr>
                                     <td>Environment A</td>
                                     <td>123e4567-e89b-12d3-a456-42661...</td>
@@ -68,27 +103,47 @@
                                 <tr>
                                     <td>Environment A</td>
                                     <td>123e4567-e89b-12d3-a456-42661...</td>
-                                    <td>@May 06,2022</td>
+                                    <td>May 06,2022</td>
+                                    <td>Aug 20, 2022</td>
+                                    <td>Active</td>
+                                </tr>
+                                <tr>
+                                    <td>Environment A</td>
+                                    <td>123e4567-e89b-12d3-a456-42661...</td>
+                                    <td>May 06,2022</td>
+                                    <td>Aug 20, 2022</td>
+                                    <td>Active</td>
+                                </tr>
+                                <tr>
+                                    <td>Environment A</td>
+                                    <td>123e4567-e89b-12d3-a456-42661...</td>
+                                    <td>May 06,2022</td>
+                                    <td>Aug 20, 2022</td>
+                                    <td>Active</td>
+                                </tr>
+                                <tr>
+                                    <td>Environment A</td>
+                                    <td>123e4567-e89b-12d3-a456-42661...</td>
+                                    <td>May 06,2022</td>
                                     <td>Aug 20, 2022</td>
                                     <td>Active</td>
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
+                    <!-- </div> -->
                 </div>
-
                 <div>
-                    <h4 id="item-2">Cards</h4>
+                    <div class="custom_h2 py-2" id="item-2">Cards</div>
                     <div id="cards" class="card_container">
                         <div class="card card_data" id="card">
-                            <span>D</span>
-                            <span>employee_product info</span>
-                            <span>Employee Name</span>
+                            <span class="custom_h4 ">Dayana</span>
+                            <span class="custom_h5">employee_product info</span>
+                            <span class="custom_h5">Employee Name</span>
                             <hr>
-                            <div class="d-inline-flex">
+                            <div class="d-inline-flex custom_h6">
                                 <div class="d-flex flex-column">
                                     <span class="material-symbols-outlined"> account_tree</span>
-                                    <span>15 orgs subscribed</span>
+                                    <span >15 orgs subscribed</span>
                                 </div>
                                 <div class="d-flex flex-column">
                                     <span class="material-symbols-outlined"> browser_updated</span>
@@ -101,14 +156,14 @@
                             </div>
                         </div>
                         <div class="card card_data" id="card">
-                            <span>D</span>
-                            <span>employee_product info</span>
-                            <span>Employee Name</span>
+                            <span class="custom_h4 ">Dayana</span>
+                            <span class="custom_h5">employee_product info</span>
+                            <span class="custom_h5">Employee Name</span>
                             <hr>
-                            <div class="d-inline-flex">
+                            <div class="d-inline-flex custom_h6">
                                 <div class="d-flex flex-column">
                                     <span class="material-symbols-outlined"> account_tree</span>
-                                    <span>15 orgs subscribed</span>
+                                    <span >15 orgs subscribed</span>
                                 </div>
                                 <div class="d-flex flex-column">
                                     <span class="material-symbols-outlined"> browser_updated</span>
@@ -121,14 +176,14 @@
                             </div>
                         </div>
                         <div class="card card_data" id="card">
-                            <span>D</span>
-                            <span>employee_product info</span>
-                            <span>Employee Name</span>
+                            <span class="custom_h4 ">Dayana</span>
+                            <span class="custom_h5">employee_product info</span>
+                            <span class="custom_h5">Employee Name</span>
                             <hr>
-                            <div class="d-inline-flex">
+                            <div class="d-inline-flex custom_h6">
                                 <div class="d-flex flex-column">
                                     <span class="material-symbols-outlined"> account_tree</span>
-                                    <span>15 orgs subscribed</span>
+                                    <span >15 orgs subscribed</span>
                                 </div>
                                 <div class="d-flex flex-column">
                                     <span class="material-symbols-outlined"> browser_updated</span>
@@ -141,14 +196,14 @@
                             </div>
                         </div>
                         <div class="card card_data" id="card">
-                            <span>D</span>
-                            <span>employee_product info</span>
-                            <span>Employee Name</span>
+                            <span class="custom_h4 ">Dayana</span>
+                            <span class="custom_h5">employee_product info</span>
+                            <span class="custom_h5">Employee Name</span>
                             <hr>
-                            <div class="d-inline-flex">
+                            <div class="d-inline-flex custom_h6">
                                 <div class="d-flex flex-column">
                                     <span class="material-symbols-outlined"> account_tree</span>
-                                    <span>15 orgs subscribed</span>
+                                    <span >15 orgs subscribed</span>
                                 </div>
                                 <div class="d-flex flex-column">
                                     <span class="material-symbols-outlined"> browser_updated</span>
@@ -161,14 +216,14 @@
                             </div>
                         </div>
                         <div class="card card_data" id="card">
-                            <span>D</span>
-                            <span>employee_product info</span>
-                            <span>Employee Name</span>
+                            <span class="custom_h4 ">Dayana</span>
+                            <span class="custom_h5">employee_product info</span>
+                            <span class="custom_h5">Employee Name</span>
                             <hr>
-                            <div class="d-inline-flex">
+                            <div class="d-inline-flex custom_h6">
                                 <div class="d-flex flex-column">
                                     <span class="material-symbols-outlined"> account_tree</span>
-                                    <span>15 orgs subscribed</span>
+                                    <span >15 orgs subscribed</span>
                                 </div>
                                 <div class="d-flex flex-column">
                                     <span class="material-symbols-outlined"> browser_updated</span>
@@ -180,15 +235,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card card_data" id="card">
-                            <span>D</span>
-                            <span>employee_product info</span>
-                            <span>Employee Name</span>
+                         <div class="card card_data" id="card">
+                            <span class="custom_h4 ">Dayana</span>
+                            <span class="custom_h5">employee_product info</span>
+                            <span class="custom_h5">Employee Name</span>
                             <hr>
-                            <div class="d-inline-flex">
+                            <div class="d-inline-flex custom_h6">
                                 <div class="d-flex flex-column">
                                     <span class="material-symbols-outlined"> account_tree</span>
-                                    <span>15 orgs subscribed</span>
+                                    <span >15 orgs subscribed</span>
                                 </div>
                                 <div class="d-flex flex-column">
                                     <span class="material-symbols-outlined"> browser_updated</span>
@@ -200,98 +255,39 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card card_data" id="card">
-                            <span>D</span>
-                            <span>employee_product info</span>
-                            <span>Employee Name</span>
-                            <hr>
-                            <div class="d-inline-flex">
-                                <div class="d-flex flex-column">
-                                    <span class="material-symbols-outlined"> account_tree</span>
-                                    <span>15 orgs subscribed</span>
-                                </div>
-                                <div class="d-flex flex-column">
-                                    <span class="material-symbols-outlined"> browser_updated</span>
-                                    <span>12 Versions (Latest 2.3.8)</span>
-                                </div>
-                                <div class="d-flex flex-column">
-                                    <span class="material-symbols-outlined"> calendar_today</span>
-                                    <span>15 orgs subscribed</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card card_data" id="card">
-                            <span>D</span>
-                            <span>employee_product info</span>
-                            <span>Employee Name</span>
-                            <hr>
-                            <div class="d-inline-flex">
-                                <div class="d-flex flex-column">
-                                    <span class="material-symbols-outlined"> account_tree</span>
-                                    <span>15 orgs subscribed</span>
-                                </div>
-                                <div class="d-flex flex-column">
-                                    <span class="material-symbols-outlined"> browser_updated</span>
-                                    <span>12 Versions (Latest 2.3.8)</span>
-                                </div>
-                                <div class="d-flex flex-column">
-                                    <span class="material-symbols-outlined"> calendar_today</span>
-                                    <span>15 orgs subscribed</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card card_data" id="card">
-                            <span>D</span>
-                            <span>employee_product info</span>
-                            <span>Employee Name</span>
-                            <hr>
-                            <div class="d-inline-flex">
-                                <div class="d-flex flex-column">
-                                    <span class="material-symbols-outlined"> account_tree</span>
-                                    <span>15 orgs subscribed</span>
-                                </div>
-                                <div class="d-flex flex-column">
-                                    <span class="material-symbols-outlined"> browser_updated</span>
-                                    <span>12 Versions (Latest 2.3.8)</span>
-                                </div>
-                                <div class="d-flex flex-column">
-                                    <span class="material-symbols-outlined"> calendar_today</span>
-                                    <span>15 orgs subscribed</span>
-                                </div>
-                            </div>
-                        </div>
+                      
                     </div>
                 </div>
                 <div>
-                    <h4 id="item-3">Forms</h4>
-                    <div class="py-3 px-4">
-                        <form data-toggle="validator" role="form" >
-                            <div class="row">
-                                <div class="form-group col-6">
-                                    <label for="firstName" class="control-label">First Name</label>
+                    <div class="custom_h2 py-2" id="item-3">Forms</div>
+                    <div class="px-2">
+                        <form data-toggle="validator" role="form">
+                            <div class="row my-3">
+                                <div class="form-group col-6 ">
+                                    <label for="firstName" class="control-label custom_h4 my-2">First Name</label>
                                     <input type="text" class="form-control" id="firstName" placeholder="enter the name"
                                         required>
                                 </div>
                                 <div class="form-group col-6">
-                                    <label for="lastName" class="control-label">last Name</label>
+                                    <label for="lastName" class="control-label custom_h4 my-2">last Name</label>
                                     <input type="text" class="form-control" id="lastName" placeholder="enter the name"
                                         required>
                                 </div>
                             </div>
-                           
-                            <div class="form-group">
-                                <label for="inputEmail" class="control-label">Email</label>
+
+                            <div class="form-group my-3">
+                                <label for="inputEmail" class="control-label custom_h4 my-2">Email</label>
                                 <input type="email" class="form-control" id="inputEmail" placeholder="Email"
                                     data-error="Bruh, that email address is invalid" required>
                                 <div class="help-block with-errors"></div>
                             </div>
-                            <div class="form-group">
-                                <label for="inputPassword" class="control-label">Password</label>
+                            <div class="form-group my-3">
+                                <label for="inputPassword" class="control-label custom_h4 my-2">Password</label>
                                 <div class="form-inline row">
                                     <div class="form-group col-sm-6">
                                         <input type="password" data-minlength="6" class="form-control"
                                             id="inputPassword" placeholder="Password" required>
-                                        <div class="help-block">Minimum of 6 characters</div>
+                                        <div class="help-block custom_h6">* Minimum of 6 characters</div>
                                     </div>
                                     <div class="form-group col-sm-6">
                                         <input type="password" class="form-control" id="inputPasswordConfirm"
@@ -301,46 +297,139 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label for="gender" class="control-label">Gender</label>
+                            <div class="form-group my-3">
+                                <label for="gender" class="control-label custom_h4 my-2">Gender</label>
                                 <div class="row">
                                     <div class="radio col-4">
                                         <label>
-                                            <input type="radio" name="gender" required>
+                                            <input type="radio" class="custom_h5" name="gender" required>
                                             Male
                                         </label>
                                     </div>
                                     <div class="radio col-4">
                                         <label>
-                                            <input type="radio" name="gender" required>
+                                            <input type="radio" class="custom_h5" name="gender" required>
                                             Female
                                         </label>
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group my-2">
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" id="terms" data-error="Before you wreck yourself"
-                                            required>
-                                        Check yourself
-                                    </label>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-                            <div class="form-group">
+                            <div class="form-group my-3">
                                 <button type="submit" class="btn btn-primary">Submit</button>
                             </div>
                         </form>
                     </div>
                 </div>
-
+                <div>
+                    <div class="custom_h2 py-2" id="item-4" >Dropdown&button</div>
+                    <div class="button_dropdown ms-2">
+                        <div class="">
+                            <button class="btn dropdown custom_h5 dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              Dropdown button
+                            </button>
+                            <ul class="dropdown-menu custom_h5 " aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <div class="button container ">
+                            <button type="button " class="btn custom_button2">cancel</button>
+                            <button type="button " class="btn custom_button">Save</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="footer">
-            footer
+        <div class="footer custom_h6">
+            @copyright,innova 2020.
         </div>
     </div>
+  
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <span id="buttontoggle"  class="cursor-pointer">
+            <span aria-hidden="true">&times;</span>
+          </span>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group row my-3">
+                    <label class="col-4">Change font</label>
+                    <div class="input-group w-50 col-6">
+                        <select name="combobox" class="combobox custom_h5 " >
+                            <option default>--Choose font family--</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row my-3">
+                    <label for="h1" class="col-4">h1</label>
+                    <div class="input-group w-50 col-6">
+                        <input type="text"  id='size1' value="22.78" class="form-control"  placeholder="h1 size" onchange="h1()">
+                        <div class="input-group-append">
+                          <span class="input-group-text">px</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row my-3">
+                    <label for="h2" class="col-4">h2</label>
+                    <div class="input-group w-50 col-6">
+                        <input type="text"  id='size2' value="22.25" class="form-control"  placeholder="h2 size" onchange="h2()">
+                        <div class="input-group-append">
+                          <span class="input-group-text">px</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row my-3">
+                    <label for="h3" class="col-4">h3</label>
+                    <div class="input-group w-50 col-6">
+                        <input type="text"  id='size3' value="18.00" class="form-control"  placeholder="h3 size" onchange="h3()">
+                        <div class="input-group-append">
+                          <span class="input-group-text">px</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row my-3">
+                    <label for="h4" class="col-4">h4</label>
+                    <div class="input-group w-50 col-6">
+                        <input type="text"  id='size4' value="16.00" class="form-control"  placeholder="h4 size" onchange="h4()">
+                        <div class="input-group-append">
+                          <span class="input-group-text">px</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row my-3">
+                    <label for="h5" class="col-4">h5</label>
+                    <div class="input-group w-50 col-6">
+                        <input type="text"  id='size5' value="14.22" class="form-control"  placeholder="h5 size" onchange="h5()">
+                        <div class="input-group-append">
+                          <span class="input-group-text">px</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row my-3">
+                    <label for="h6" class="col-4">h6</label>
+                    <div class="input-group w-50 col-6">
+                        <input type="text"  id='size6' value="12.64" class="form-control"  placeholder="h6 size" onchange="h6()">
+                        <div class="input-group-append">
+                          <span class="input-group-text">px</span>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" id="buttontoggle" data-dismiss="modal">Save & Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
     <script src="./index.js"></script>
 </body>
 

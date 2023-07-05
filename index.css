@@ -1,3 +1,68 @@
+:root{
+    --black1:#202020;
+    --black:#000000;
+    --blue:#183B8C;
+    --greyblack:#585858;
+    --white:#ffffff;
+    --white2: #F5F5F5;
+    --white3:#F1F5F8;
+    --grey2:#dee2e6;
+    --grey3:#C8C8C8;
+
+}
+.custom_h1{
+    font-size: 22.78px;
+    font-weight: 700;
+    color:var(--black1)
+}
+.custom_h2{
+    font-size: 20.25px;
+    font-weight: 700;
+    color: var(--black1);
+}
+.custom_h3{
+    font-size: 18px;
+    color: var(--black1);
+}
+.custom_h4{
+    font-size: 16px;
+    font-weight: 700;
+    color:var(--blue)
+}
+.custom_h5{
+    font-size: 14.22px;
+    font-weight: 400;
+    color: var(--black1);
+}
+.custom_h6{
+    font-size: 12.64px;
+    font-weight: 400;
+    color: var(--greyblack);
+}
+.blue_clr{
+    color: var(--blue) !important;
+}
+
+.custom_button{
+    background-color: var(--blue);
+    color: var(--white);
+    border: 1px solid var(--white);
+    font-size: 16px;
+    font-weight: 500;
+}
+.custom_button2{
+    background-color: var(--white);
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    font-size: 16px;
+    font-weight: 500;
+}
+.bg_circle{
+    background-color: var(--grey3) ;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
 .Whole_container{
     height: 100vh;
 }
@@ -6,11 +71,30 @@
     overflow-y: auto; */
 }
 .body_container > div{
-    height: 90vh;
+    height: calc(100vh - 70px);
     overflow-y: auto;
     overflow-x: hidden;
     width: 100%;
-    padding: 0 16px;
+    margin-left: 32px;
+}
+.data_content > div{
+    margin: 8px;
+    padding: 16px;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(105, 95, 95, 0.125);
+    border-radius: 0.25rem;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding:4px 16px;
+    align-items: center;
+    height: 45px;
+}
+.combobox :focus-visible{
+    border: 0;
+    outline: 0;
 }
 .card_container{
     
@@ -26,4 +110,21 @@
 }
 .help-block{
     color: red;
+}
+.dropdown{
+    border: 1px solid var(--greyblack);
+    background-color: var(--grey2);
+    color: var(--black1);
+}
+.button_dropdown{
+    display: flex;
+    justify-content: flex-start;
+    gap: 24px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--grey3);
+    height: 25px;
 }
