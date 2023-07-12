@@ -13,32 +13,26 @@
 .custom_h1{
     font-size: 22.78px;
     font-weight: 700;
-    color:var(--black1)
 }
 .custom_h2{
     font-size: 20.25px;
     font-weight: 700;
-    color: var(--black1);
 }
 .custom_h3{
     font-size: 18px;
     font-weight: 500;
-    color: var(--black1);
 }
 .custom_h4{
     font-size: 16px;
     font-weight: 700;
-    color:var(--black1)
 }
 .custom_h5{
     font-size: 14.22px;
     font-weight: 400;
-    color: var(--black1);
 }
 .custom_h6{
     font-size: 12.64px;
     font-weight: 400;
-    color: var(--greyblack);
 }
 .blue_clr{
     color: var(--blue) !important;
@@ -74,6 +68,9 @@
     /* height: 90vh;
     overflow-y: auto; */
 }
+.fw-400{
+    font-weight: 400 !important;
+}
 .body_container > div{
     height: calc(100vh - 70px);
     overflow-y: auto;
@@ -86,7 +83,7 @@
     padding: 16px;
     background-color: #fff;
     background-clip: border-box;
-    border: 1px solid rgba(105, 95, 95, 0.125);
+    border: 1px dashed rgba(11, 8, 8, 0.125);
     border-radius: 0.25rem;
 }
 .header{
