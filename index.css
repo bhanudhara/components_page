@@ -22,12 +22,13 @@
 }
 .custom_h3{
     font-size: 18px;
+    font-weight: 500;
     color: var(--black1);
 }
 .custom_h4{
     font-size: 16px;
     font-weight: 700;
-    color:var(--blue)
+    color:var(--black1)
 }
 .custom_h5{
     font-size: 14.22px;
@@ -62,6 +63,9 @@
     width: 24px;
     height: 24px;
     border-radius: 50%;
+}
+.w-35{
+    width: 35% !important;
 }
 .Whole_container{
     height: 100vh;
@@ -120,6 +124,13 @@
     display: flex;
     justify-content: flex-start;
     gap: 24px;
+}
+.headings > span{
+  text-align: center; 
+  display: block;
+}
+.colorpick-eyedropper-input-trigger{
+    visibility: hidden;
 }
 .footer{
     display: flex;
