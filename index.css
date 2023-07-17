@@ -85,7 +85,7 @@ border-right: 1px solid #9f9ca0;
     margin-left: 32px;
 }
 .data_content > div{
-    margin: 8px;
+    margin: 8px 0;
     padding: 16px;
     background-color: #fff;
     background-clip: border-box;
