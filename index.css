@@ -10,30 +10,36 @@
     --grey3:#C8C8C8;
 
 }
+
 .custom_h1{
-    font-size: 22.78px;
+    font-size: 1.4238rem;
     font-weight: 700;
 }
 .custom_h2{
-    font-size: 20.25px;
+    font-size: 1.2656rem;
     font-weight: 700;
 }
 .custom_h3{
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
 }
 .custom_h4{
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 1rem;
+    font-weight: 400;
 }
 .custom_h5{
-    font-size: 14.22px;
+    font-size: 0.888rem;
     font-weight: 400;
 }
 .custom_h6{
-    font-size: 12.64px;
+    font-size: 0.79rem;
     font-weight: 400;
 }
+.brder-right
+{
+border-right: 1px solid #9f9ca0;
+}
+
 .blue_clr{
     color: var(--blue) !important;
 }
@@ -89,7 +95,7 @@
 .header{
     display: flex;
     justify-content: space-between;
-    padding:4px 16px;
+    padding:8px 16px;
     align-items: center;
     height: 45px;
 }
@@ -134,5 +140,37 @@
     align-items: center;
     justify-content: center;
     background-color: var(--grey3);
-    height: 25px;
+    height:25px;
 }
+.rems
+{
+    color: #868789;
+}
+.header-2
+{
+    background-color: rgba(13,110,253,.25) !important;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+/* ===== Scrollbar CSS ===== */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #568de6b0 #f8f7f7;
+  }
+
+  *::-webkit-scrollbar {
+    width: 15px;
+    height: 300px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #f8f7f7;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #568de6;
+    border: 1px solid #ffffff;
+  }
