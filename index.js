@@ -95,7 +95,7 @@ function h4() {
   h5tag[0].innerHTML="h5= "+ (basesize*0.88).toFixed(2)+" px (0.88rem)"
   h6tag[0].innerHTML="h6= "+ (basesize*0.79).toFixed(2)+" px (0.79rem)";
   document.getElementById('h1tag').innerHTML=`This is an h1 tag fs-${(basesize*1.423).toFixed(2)}px & fw-700`;
-  document.getElementById('h2tag').innerHTML=`This is an h1 tag fs-${(basesize*1.265).toFixed(2)}px & fw-700`;
+  document.getElementById('h2tag').innerHTML=`This is an h2 tag fs-${(basesize*1.265).toFixed(2)}px & fw-700`;
   document.getElementById('h3tag').innerHTML=`This is an h3 tag fs-${(basesize*1.125).toFixed(2)}px & fw-500`;
   document.getElementById('h4tag').innerHTML=`This is an h4 tag fs-${(basesize*1)}px & fw-400`;
   document.getElementById('h5tag').innerHTML=`This is an h5 tag fs-${(basesize*0.88).toFixed(2)}px & fw-400`;
