@@ -34,7 +34,6 @@ $(document).ready(function () {
 });
 
 $(document).on("click","#buttontoggle",function(){
-  console.log('koikl')
   $("#exampleModal").modal("toggle");
   
 })

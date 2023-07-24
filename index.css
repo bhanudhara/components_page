@@ -82,7 +82,7 @@ border-right: 1px solid #9f9ca0;
     overflow-y: auto;
     overflow-x: hidden;
     width: 100%;
-    margin-left: 32px;
+    margin-left: 16px;
 }
 .data_content > div{
     margin: 8px 0;
