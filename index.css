@@ -107,7 +107,7 @@ border-right: 1px solid #9f9ca0;
     
     display: grid;
     grid-row-gap: 16px;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
     grid-template-rows: auto;
 }
 .card_data{
